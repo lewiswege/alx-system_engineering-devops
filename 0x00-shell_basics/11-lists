@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la cd .. ls -la cd /boot ls -la
+ls -lan cd .. ls -lan cd /boot ls -lan
