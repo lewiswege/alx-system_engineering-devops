@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#initialise loop counter
+counter=1
+#begin the loop
+while [ "$counter" -le 10 ]
+do
+    #check condition and display appropriate message
+    if [ "$counter" -eq 4 ]; then
+        echo "bad luck"
+    elif [ "$counter" -eq 8 ]; then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((counter++))
+done
