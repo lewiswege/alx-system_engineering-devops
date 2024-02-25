@@ -2,9 +2,11 @@
 
 <h3>With the following objectives<h3>
 <br>
-What is a server
-Where servers usually live
-What is SSH
-How to create an SSH RSA key pair
-How to connect to a remote host using an SSH RSA key pair
-The advantage of using #!/usr/bin/env bash instead of /bin/bash
+<ul>
+    <li>What is a server<li>
+    <li>Where servers usually live<li>
+    <li>What is SSH<li>
+    <li>How to create an SSH RSA key pair<li>
+    <li>How to connect to a remote host using an SSH RSA key pair<li>
+    <li>The advantage of using #!/usr/bin/env bash instead of /bin/bash<li>
+</ul>
