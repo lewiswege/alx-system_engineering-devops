@@ -40,7 +40,7 @@ frontend  lewis-frontend-http
         default_backend lewis-backend
 
 frontend ehoneah-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.lewiswege.tech
+	bind *:443 ssl crt /etc/haproxy/certs/www.lewiswege.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend ehoneah-backend
 
