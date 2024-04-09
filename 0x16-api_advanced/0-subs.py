@@ -3,7 +3,7 @@
 number of subscribers for a given subreddit
 """
 
-import requests
+from requests import get
 
 
 def number_of_subscribers(subreddit):
@@ -17,11 +17,11 @@ def number_of_subscribers(subreddit):
 
     user_agent = {'User-agent': 'Google Chrome Version 81.0.4044.129'}
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    response = requests.get(url, headers=user_agent)
+    response = get(url, headers=user_agent)
     results = response.json()
 
     try:
-        return results.requests.get('data').requests.get('subscribers')
+        return results.get('data').get('subscribers')
 
     except Exception:
         return 0
